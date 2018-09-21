@@ -63,6 +63,21 @@ export default {
           id: '0009',
           imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png',
           desc: '赏秋色'
+        },
+        {
+          id: '00010',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png',
+          desc: '赏秋色'
+        },
+        {
+          id: '00011',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png',
+          desc: '赏秋色'
+        },
+        {
+          id: '00012',
+          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png',
+          desc: '赏秋色'
         }
       ]
     }
@@ -92,43 +107,44 @@ export default {
   // overflow: hidden
   // background: #ff0
 }
+.icons
+  margin-top: .1rem
+  .icon {
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    float: left;
 
-.icon {
-  position: relative;
-  overflow: hidden;
-  width: 25%;
-  height: 0;
-  padding-bottom: 25%;
-  float: left;
+    // background: green
+    .icon-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0.44rem;
+      box-sizing: border-box;
+      // background: blue
+      padding: 0.1rem;
 
-  // background: green
-  .icon-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0.44rem;
-    box-sizing: border-box;
-    // background: blue
-    padding: 0.1rem;
+      .icon-img-content {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+      }
+    }
 
-    .icon-img-content {
-      display: block;
-      margin: 0 auto;
-      height: 100%;
+    .icon-desc {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      text-align: center;
+      color: $darkTextColor;
+      ellipsis()
     }
   }
-
-  .icon-desc {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 0.44rem;
-    line-height: 0.44rem;
-    text-align: center;
-    color: $darkTextColor;
-    ellipsis()
-  }
-}
 </style>
