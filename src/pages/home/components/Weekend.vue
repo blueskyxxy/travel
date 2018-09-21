@@ -2,7 +2,7 @@
   <div>
       <div class="title">周末去哪儿</div>
       <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
           <div class="item-img-wrapper">
             <img class="item-img" :src="item.imgUrl" />
           </div>
@@ -18,29 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg',
-          title: '杭州极地海洋世界',
-          desc: '来杭州，你不能错过的地方，杭州极地海洋世界期待您的到来'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg',
-          title: '杭州极地海洋世界',
-          desc: '来杭州，你不能错过的地方，杭州极地海洋世界期待您的到来'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/ae/4fe23c6b6679e2.jpg_r_640x214_368a18d8.jpg',
-          title: '杭州极地海洋世界',
-          desc: '来杭州，你不能错过的地方，杭州极地海洋世界期待您的到来'
-        }
-      ]
-    }
+  props: {
+    'list': Array
   }
 }
 </script>
@@ -48,7 +27,6 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   .title
-    margin-top: .2rem
     padding-top: .1rem
     padding-bottom: .1rem
     line-height: .4rem
@@ -57,7 +35,7 @@ export default {
   .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 31.25%
+    padding-bottom: 37.09%
     .item-img
       width: 100%
   .item-info
