@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="area" 
+      <div class="area"
           v-for="(item, key) of cities"
           :key="key"
           :ref="key"
