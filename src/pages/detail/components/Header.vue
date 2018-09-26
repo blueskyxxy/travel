@@ -59,6 +59,7 @@ export default {
     .header-abs-back
       color: #fff
       font-size: .4rem
+      text-align: center
   .header-fixed
     z-index: 2
     position: fixed
